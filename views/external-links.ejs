@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Links</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+
+    <%- include('partials/nav') %>
+
+
+    <header>
+        <h1>External Links</h1>
+    </header>
+
+    <main>
+        <ul>
+            <% links.forEach(function(link) { %>
+                <li><a href="<%= link.url %>" target="_blank"><%= link.name %></a></li>
+            <% }); %>
+        </ul>
+    </main>
+
+</body>
+</html>
+
