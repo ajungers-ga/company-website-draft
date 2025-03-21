@@ -1,6 +1,6 @@
 const express = require('express'); // importing the express framework
 const app = express();              // creating an express app instance
-const port = 3001;                  // this is my local port 
+const port = 3005;                  // this is my local port 
 
 app.use(express.static('public'));  // this is telling express to service unchanging files like css into public folder
 app.set('view engine', 'ejs');      // instrictiong espress to use the ejs for templating by html routes
